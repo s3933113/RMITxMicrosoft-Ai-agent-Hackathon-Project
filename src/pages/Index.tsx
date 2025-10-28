@@ -93,7 +93,7 @@ const Index = () => {
                 <FileSparkles className="h-12 w-12 text-custom-purple dark:text-white" />
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-3">
-                Resume Match Magic Wand
+                ResuMatch 
               </h1>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 Upload your resume and paste a job description to see how well you match!
