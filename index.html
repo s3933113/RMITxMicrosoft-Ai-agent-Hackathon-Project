@@ -18,6 +18,13 @@
   </head>
 
   <body>
+    <script>
+      (function() {
+        if (!localStorage.getItem("theme")) {
+          document.documentElement.classList.remove("dark");
+        }
+      })();
+    </script>
     <div id="root"></div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>

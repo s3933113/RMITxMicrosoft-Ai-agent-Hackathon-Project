@@ -7,11 +7,10 @@ export const useTheme = () => {
   const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
-    // Get initial theme from localStorage or user preference
+    // Home / app starts with bright (light) theme; use saved preference only if user has chosen one
     const savedTheme = localStorage.getItem("theme") as Theme | null;
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
-    
+    const initialTheme = savedTheme ?? "light";
+
     setTheme(initialTheme);
     updateDocumentClass(initialTheme);
   }, []);
