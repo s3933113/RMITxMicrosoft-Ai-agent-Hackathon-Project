@@ -33,7 +33,7 @@ const ResumeUploader: React.FC<ResumeUploaderProps> = ({ onFileUploaded }) => {
 
   return (
     <div className="w-full">
-      <h2 className="text-xl font-semibold mb-3 text-custom-purple dark:text-custom-purple-light">
+      <h2 className="text-xl font-semibold mb-3 text-atlassian-blue dark:text-atlassian-blue-light">
         Upload Your Resume
       </h2>
       
@@ -44,7 +44,7 @@ const ResumeUploader: React.FC<ResumeUploaderProps> = ({ onFileUploaded }) => {
           onDragLeave={onDragLeave}
           onDrop={onDrop}
         >
-          <FileUp className="h-12 w-12 mb-4 text-custom-purple dark:text-custom-purple-light" />
+          <FileUp className="h-12 w-12 mb-4 text-atlassian-blue dark:text-atlassian-blue-light" />
           <p className="text-lg mb-4">Drag & drop your resume PDF here</p>
           <p className="text-sm text-muted-foreground mb-4">
             or click the button below
@@ -69,7 +69,7 @@ const ResumeUploader: React.FC<ResumeUploaderProps> = ({ onFileUploaded }) => {
       ) : (
         <div className="cute-card">
           <div className="flex items-center">
-            <FileText className="h-10 w-10 text-custom-purple" />
+            <FileText className="h-10 w-10 text-atlassian-blue" />
             <div className="ml-4 flex-1">
               <p className="font-medium">{fileName}</p>
               <p className="text-sm text-muted-foreground">

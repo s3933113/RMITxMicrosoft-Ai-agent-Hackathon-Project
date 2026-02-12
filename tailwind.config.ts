@@ -89,6 +89,14 @@ export default {
 						DEFAULT: '#FDEDA0',
 						dark: '#E6D681'
 					}
+				},
+				atlassian: {
+					blue: {
+						light: '#DEEBFF',
+						DEFAULT: '#0052CC',
+						hover: '#0065FF',
+						dark: '#4C9AFF'
+					}
 				}
 			},
 			borderRadius: {

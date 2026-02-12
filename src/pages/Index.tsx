@@ -89,8 +89,8 @@ const Index = () => {
         {!results ? (
           <div className="mb-8">
             <div className="text-center mb-10">
-              <div className="inline-block p-4 bg-custom-purple-light dark:bg-custom-purple-dark rounded-full mb-4">
-                <FileSparkles className="h-12 w-12 text-custom-purple dark:text-white" />
+              <div className="inline-block p-4 bg-atlassian-blue-light dark:bg-atlassian-blue-dark rounded-full mb-4">
+                <FileSparkles className="h-12 w-12 text-atlassian-blue dark:text-white" />
               </div>
               <h1 className="text-3xl md:text-4xl font-bold mb-3">
                 ResuMatch 
