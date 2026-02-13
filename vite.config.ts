@@ -22,5 +22,19 @@ export default defineConfig(({ mode }) => ({
   },
   // Define environment variables that should be exposed to the client
   // Note: For security, only variables prefixed with VITE_ are exposed
-  envPrefix: 'VITE_'
+  envPrefix: 'VITE_',
+  build: {
+    // Production optimizations
+    minify: 'esbuild',
+    sourcemap: false,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+          'vendor-clerk': ['@clerk/clerk-react'],
+          'vendor-ui': ['@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
+        },
+      },
+    },
+  },
 }));
